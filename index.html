@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HoYoverse</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="temp-buttons">
+        <button id="red">red</button>
+        <button id="honkai">honkai</button>
+        <button id="gehnsh">gehnsh</button>
+        <button id="zzz">zzz</button>
+        <button id="vuva">vuva</button>
+      </div> -->
+      <header>
+        <div class="exit">
+          <img style="width: 30px" src="./assets/h-bg/exit.svg" alt="" />
+        </div>
+        <div class="header__left-section">
+          <div class="header__img"></div>
+          <div class="header__fields">
+            <input disabled type="text" />
+            <div class="header__input">
+              <input disabled type="text" />
+              <img src="./assets/h-bg/hz.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="header__right-section">
+          <div class="header__random">
+            <img src="./assets/h-bg/r-cube.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <div class="main-block">
+        <div class="main-menu">
+          <ul>
+            <li id="menu-guide" class="red">
+              <img src="./assets/mb/r-book.svg" alt="" /> Гайды
+              <img class="img-next" src="./assets/mb/r-next.svg" alt="" />
+            </li>
+            <li id="menu-characters" class="red">
+              <img src="./assets/mb/r-character.svg" alt="" />Персонажи
+              <img class="img-next" src="./assets/mb/r-next.svg" alt="" />
+            </li>
+            <li id="menu-challenges" class="red">
+              <img src="./assets/mb/r-gift.svg" alt="" />Розыгрыш
+              <img class="img-next" src="./assets/mb/r-next.svg" alt="" />
+            </li>
+            <li id="menu-shop" class="red">
+              <img src="./assets/mb/r-dice.svg" alt="" />Магазин
+              <img class="img-next" src="./assets/mb/r-next.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="shop hidden">
+          <div class="shop__banner"></div>
+          <div class="shop__choose-game">
+            <button id="btn_shop-game">Выбрать игру</button>
+            <div class="shop__choosen-game">Выберите игру</div>
+          </div>
+          <div class="shop__products">
+            <ul>
+              <li>
+                <div class="product-card"></div>
+                <button id="btn_shop-buy">Купить</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="select-game hidden">
+          <ul id="game-list">
+            <li id="gensh">Genshin Impact</li>
+            <li id="honkai">Honkai: Star Rail</li>
+            <li id="wuthering">Wuthering Waves</li>
+            <li id="zzz">Zenless Zone Zero</li>
+          </ul>
+        </div>
+        <div class="challenges hidden">
+          <div class="challenge-accept">
+            <div></div>
+            <button>Участвовать</button>
+          </div>
+          <ul>
+            <li>
+              <div class="challenge-text">TextTextT</div>
+              <button class="challenge-button">
+                <div class="challenge-button-status">Выполнить</div>
+              </button>
+            </li>
+            <li>
+              <div class="challenge-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                iste ipsam illum ex et nihil molestias dolorem odit hic fugiat,
+                dignissimos soluta perferendis nostrum corporis at iure magnam,
+                provident minima.
+              </div>
+              <button class="challenge-button">
+                <div
+                  style="
+                    position: relative;
+                    min-height: 100%;
+                    width: 100%;
+                    height: 14px;
+                  "
+                  class="challenge-button-status"
+                >
+                  <img
+                    style="
+                      width: 30px;
+                      height: 30px;
+                      padding: 0;
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(-50%, -50%);
+                    "
+                    src="./assets/mb/r-accept.svg"
+                    alt=""
+                  />
+                </div>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="characters hidden">
+          <div class="div1">ранг (звёзды)</div>
+          <div class="div2">путь</div>
+          <div class="div3">стихия</div>
+          <div class="div4">персонаж</div>
+          <div class="div5">материалы вознесения</div>
+          <div class="div6">начальная характеристика</div>
+          <div class="div7">материалы следов</div>
+          <div class="div8">+ и - персонажа</div>
+        </div>
+        <div class="guide hidden">
+          <div class="guide__upper-block">
+            <img
+              style="
+                width: 30px;
+                height: 30px;
+                padding: 10px 0;
+                box-shadow: inset 0px 0px 20px 0px black;
+              "
+              src="./assets/mb/prev.png"
+              alt="prev"
+            />
+            <div>Сборка</div>
+            <img
+              style="
+                width: 30px;
+                height: 30px;
+                rotate: 180deg;
+                padding: 10px 0;
+                box-shadow: inset 0px 0px 20px 0px black;
+              "
+              src="./assets/mb/prev.png"
+              alt="next"
+            />
+          </div>
+          <ul>
+            <li>
+              <div id="div1">Персонаж</div>
+              <div id="div2">Артефакты</div>
+            </li>
+            <li>
+              <div id="div3">Оружие</div>
+              <div class="one-unit" id="div4">Нужные характеристики</div>
+              <div
+                class="two-unit"
+                style="
+                  display: flex;
+                  gap: 10px;
+                  flex-direction: column;
+                  background: none !important;
+                "
+              >
+                <div id="div5">Нужные характеристики</div>
+                <div id="div6">Нужные характеристики</div>
+              </div>
+            </li>
+            <li>
+              <div id="div7" style="height: 90px">Отряды</div>
+            </li>
+          </ul>
+        </div>
+        <div class="guide-list hidden">
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="script.js"></script>
